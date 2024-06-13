@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-bottom: 30px;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+}
+
+.form {
+  padding: 0px 50px 20px;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 30px 0;
+  align-items: center;
+}
+
+.selector {
+  padding: 8px 12px;
+  color: #333333;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 200px;
+}
+
+select.selector::part(listbox) {
+  padding: .5em;
+  margin: 5em 0 0 .2em;
+}
+
+.selector:hover {
+  outline: none;
+  border: 1px solid #bbbbbb;
+}
+
+option {
+  background: #ffffff;
+  padding: 5em;
+}
+
+option:hover {
+  background: #d1711d;
+}
+
+.next-btn {
+  width: 80%;
+  height: 50px;
+  border: 1px solid;
+  background: maroon;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+.next-btn:hover {
+  scale: 1.05;
+  transition: .5s;
+}
